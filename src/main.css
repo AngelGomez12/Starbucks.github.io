@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face{
+        font-family: "WebSymbolsRegular";
+        src: url('fonts/websymbols-regular-webfont.eot');
+        src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/websymbols-regular-webfont.woff') format('woff'),
+            url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+            url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .symbol {
+        font-family: "WebSymbolRegular";
+    }
+}
+
+@layer components {
+    .logo-container img {
+        @apply w-12 ;
+    }
+
+    .link-item {
+        @apply  m-2  pb-7 pt-3  items-center cursor-pointer hover:text-lime-700 hover:border-lime-700 hover:border-b-2;
+    }
+
+    .buscar {
+        font-family: "WebSymbolRegular";
+        @apply symbol ;
+    }
+
+    .card {
+        @apply flex flex-1 mb-6;
+    }
+
+    .card img {
+        @apply h-96 w-full ;
+    }
+
+    .back-gray {
+        @apply bg-gray-100 h-96 w-full text-center text-base flex flex-col items-center justify-center;
+    }
+
+    .title-footer {
+        @apply text-xl font-semibold mb-5 mt-5;
+    }
+
+    .container-list-footer {
+        @apply pr-7 mr-5;
+    }
+
+    .list-items {
+        @apply mb-2 mt-2;
+    }
+
+    .item-footer {
+        @apply mb-5 mt-5;
+    }
+
+    .item-footer a {
+        @apply text-gray-500 hover:text-gray-900;
+    }
+
+    .link-redes img {
+        @apply h-8 m-4 ;
+    }
+
+    .link-empresa {
+        @apply ml-5 mr-5;
+    }
+
+    .link-empresa a {
+        @apply text-gray-500 hover:text-gray-600;
+    }
+}
